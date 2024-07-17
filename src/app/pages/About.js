@@ -4,10 +4,7 @@ import Collapse from "../components/Collapse"
 import bannerImage from "../assets/photo-mountain.avif";
 import data from "../data/about.json";
 
-
 const About = () => {
- 
-
   return (
     <>
       <main>

@@ -1,71 +1,69 @@
 .wrapper {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-  }
-  
-  .accordion {
-    width: 80%;
-  }
-  
-  .item {
-    padding: 10px 20px;
-    margin-bottom: 10px;
-  }
-   .title-section {
-    display: flex;
-    width: 100%;
-  }
-  .title {
-    background-color: rgb(255, 96, 96);
-    color: white;
-    display: flex;
-    justify-content: start;
-    align-items: center;
-    cursor: pointer;
-    padding: 0 5px;
-    position: relative;
-  }
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
 
-  .title i{
-    color: white;
-    justify-content: end;
-    margin-left: 10px;
-    transition: transform 0.5s;
+.accordion {
+  width: 80%;
+}
 
-  }
+.item {
+  padding: 10px 20px;
+  margin-bottom: 10px;
+}
+.title-section {
+  display: flex;
+  width: 100%;
+}
+.title {
+  background-color: rgb(255, 96, 96);
+  color: white;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  cursor: pointer;
+  padding: 0 5px;
+  position: relative;
+}
 
-  .title i.fa-chevron-down{
-   
-    transform: rotate(180deg);
-  }
-  
-  .content {
-    color: black;
-    background-color: white;
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.5s ease-out;
-  }
-  
-  .content.show {
-    max-height: 1000px;
-    transition: max-height 0.5s ease-in;
-  }
- 
-  .owner {
-    display: flex;
-    align-items: center;
-    justify-content: end;
-    width: 50%;
-  }
+.title i {
+  color: white;
+  justify-content: end;
+  margin-left: 10px;
+  transition: transform 0.5s;
+}
 
-  .host-picture img {
-    width: 80%;
-    text-decoration: none;
-    border-radius: 60px;
-    position: relative;
-    right:0;
-    top:0;
-  }
+.title i.fa-chevron-down {
+  transform: rotate(180deg);
+}
+
+.content {
+  color: black;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease-out;
+}
+
+.content.show {
+  max-height: 1000px;
+  transition: max-height 0.5s ease-in;
+}
+
+.owner {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  width: 50%;
+}
+
+.host-picture img {
+  width: 80%;
+  text-decoration: none;
+  border-radius: 60px;
+  position: relative;
+  right: 0;
+  top: 0;
+}

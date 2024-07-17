@@ -1,9 +1,4 @@
 const Banner = ({title, bannerImage}) => {
-  //state
-//get variable banner image from css banner prop 
-
- //comportement
-
     return (
       <>
       <div className="banner">

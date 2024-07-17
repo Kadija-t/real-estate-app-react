@@ -10,7 +10,6 @@ const Card = ({Houses}) => {
 
   //1. enable redirect to the house to the click
   const handleClick = (houseId) => {
-
     navigate(`/houses/${houseId}`);
   };
   return (
