@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/housing/static/css/main.4ae5f7cf.css",
+    "main.js": "/housing/static/js/main.3e37e995.js",
+    "static/media/photo-banner-cliff.avif": "/housing/static/media/photo-banner-cliff.674f2f9a98e368672f8f.avif",
+    "static/media/photo-mountain.avif": "/housing/static/media/photo-mountain.024706a186b12c182f90.avif",
+    "static/media/kasa_red.svg": "/housing/static/media/kasa_red.9e40e09565ee2f05e03d5c08940a60cb.svg",
+    "static/media/kasa_white.svg": "/housing/static/media/kasa_white.e217e61520ce6074ed266bb320329294.svg",
+    "index.html": "/housing/index.html",
+    "main.4ae5f7cf.css.map": "/housing/static/css/main.4ae5f7cf.css.map",
+    "main.3e37e995.js.map": "/housing/static/js/main.3e37e995.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4ae5f7cf.css",
+    "static/js/main.3e37e995.js"
+  ]
+}
