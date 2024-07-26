@@ -3,6 +3,8 @@ import Header from "../components/Header";
 import House from "../data/logements.json";
 import Collapse from "../components/Collapse";
 import Slideshow from "../components/Slideshow";
+import Stars from "../components/Stars";
+import Tags from "../components/Tags";
 import { useParams, useNavigate } from "react-router-dom";
 
 const Houses = () => {
@@ -15,22 +17,6 @@ const Houses = () => {
     navigate(`/*`);
     return null;
   }
-
-  const createStars = (rating) => {
-    const stars = [];
-    if (!rating) {
-      return stars;
-    } else {
-      for (let index = 1; index <= 5; index++) {
-        if (index <= rating) {
-          stars.push(<i key={index} className="fa-solid fa-star"></i>);
-        } else {
-          stars.push(<i key={index} className="fa-regular fa-star"></i>);
-        }
-      }
-    }
-    return stars;
-  };
 
   let equipements = selectedHouse.equipments.map((equi, index) => (
     <li key={index}>{equi}</li>
@@ -51,18 +37,12 @@ const Houses = () => {
               <img src={selectedHouse.host.picture} alt="Host" />
             </div>
             <div className="rating-stars">
-              <div className="stars">{createStars(selectedHouse.rating)}</div>
+              <Stars rating={selectedHouse.rating} />
             </div>
           </div>
         </div>
         <h3>{selectedHouse.location}</h3>
-        <div className="tags">
-          {selectedHouse.tags.map((tag, index) => (
-            <div key={index} className="tag">
-              {tag}
-            </div>
-          ))}
-        </div>
+        <Tags tags={selectedHouse.tags} />
         <Collapse
           data={[{ title: "Description", content: selectedHouse.description }]}
         />
