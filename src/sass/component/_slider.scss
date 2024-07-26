@@ -37,6 +37,16 @@
     color:rgb(255, 96, 96);
   }
   .slider-image-counter {
-    color: green;
+   
+      position: absolute;
+      bottom: 10px;
+      left: 50%;
+      transform: translateX(-50%);
+      color: white;
+      font-size: 1em;
+      font-weight: 600;
+      text-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+      z-index: 10;
+      
     }
   
