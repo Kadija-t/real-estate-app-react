@@ -32,6 +32,11 @@ const imageStyle = {backgroundImage: `url(${images[currentIndex]})`};
         <i className="fa-solid fa-chevron-right" onClick={handleNext}></i>
     </div>
   )}
+   {images.length > 1 && (
+        <div className="image-counter">
+          {currentIndex + 1}/{images.length}
+        </div>
+      )}
     </>
   );
 };

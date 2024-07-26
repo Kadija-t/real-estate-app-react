@@ -22,7 +22,7 @@
   }
   
   .slide-nav i {
-    color: white;
+    colr: white;
     font-size: 55px;
     font-weight: 900;
     cursor: pointer;
@@ -36,3 +36,15 @@
   h1{
     color:rgb(255, 96, 96);
   }
+.image-counter {
+  background-color: rgb(233, 3, 3);
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    font-size: 1.5em;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+    z-index: 10;
+  }
+  
