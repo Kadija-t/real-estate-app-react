@@ -33,7 +33,7 @@ const imageStyle = {backgroundImage: `url(${images[currentIndex]})`};
     </div>
   )}
    {images.length > 1 && (
-        <div className="image-counter">
+        <div className="slider-image-counter">
           {currentIndex + 1}/{images.length}
         </div>
       )}
