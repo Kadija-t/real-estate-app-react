@@ -13,7 +13,6 @@ const Card = ({Houses}) => {
     <>
       <div className="Info">
         {Houses.map((house) => {
-          console.log(house.title)
           return (
            <Link to={`/houses/${house.id}`} key={house.id} className="box">
             <div
