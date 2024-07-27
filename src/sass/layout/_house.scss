@@ -32,20 +32,10 @@
 
     @media (max-width: 768px) {
       justify-content: end; 
-      margin-top: 50px; 
+      margin: 2px 10px -70px 200px;
     }
   }
 
-  .owner-stars {
-    //modif pour aligner les éléments
-    @media (max-width: 768px) {
-      flex-direction: row;
-      justify-content: flex-end;
-      width: 100%;
-      margin-top: 0px;
-    }
-  }
-  
   .owner-img-name {
     display: flex;
     align-items: center;
@@ -54,7 +44,7 @@
   }
   
   .host-name {
-    margin-right: 5px;
+    
     color: $secondary-color; 
     width: 30%;
     margin-right: 10px;
@@ -69,6 +59,7 @@
     overflow: hidden;
     justify-content: center;
     align-items: center;
+    margin-left: 15px;
   }
   
   .host-picture img {

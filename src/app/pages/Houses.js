@@ -42,8 +42,8 @@ const Houses = () => {
 
         </div>
         
-        <div className="owner-stars">  <Tags tags={selectedHouse.tags} />
-             
+        <div className="owner-stars">
+          <Tags tags={selectedHouse.tags} />
          <div className="owner">
             <div className="owner-img-name">
               <div className="host-name">{selectedHouse.host.name}</div>
@@ -52,7 +52,6 @@ const Houses = () => {
               </div>
             </div>
           </div>
-           
         <div className="rating-stars">
           <Stars rating={selectedHouse.rating} />
         </div></div> 
