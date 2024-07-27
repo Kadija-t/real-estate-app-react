@@ -32,7 +32,7 @@
 
     @media (max-width: 768px) {
       justify-content: end; 
-      margin: 2px 10px -70px 200px;
+      margin: 2px 5px -70px 200px;
     }
   }
 
@@ -60,6 +60,7 @@
     justify-content: center;
     align-items: center;
     margin-left: 15px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.35) ;
   }
   
   .host-picture img {
