@@ -3,6 +3,11 @@
     justify-content: space-between;
     align-items: center;
     width: 100%;
+
+    @media (max-width: 768px) {
+      flex-direction: column;
+      align-items: flex-start;
+    }
   }
   .house-title {
     color: rgb(255, 96, 96);
@@ -22,13 +27,30 @@
     display: flex;
     flex-direction: column;
     align-items: flex-end;
+    margin-top: -120px;
+    
+
+    @media (max-width: 768px) {
+      justify-content: end; 
+      margin-top: 50px; 
+    }
+  }
+
+  .owner-stars {
+    //modif pour aligner les éléments
+    @media (max-width: 768px) {
+      flex-direction: row;
+      justify-content: flex-end;
+      width: 100%;
+      margin-top: 0px;
+    }
   }
   
   .owner-img-name {
     display: flex;
     align-items: center;
     justify-content: end;
-    margin-top: 30px;
+    margin-bottom: 20px;
   }
   
   .host-name {

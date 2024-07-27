@@ -5,6 +5,10 @@
     justify-content: center;
     height: 100vh;
     text-align: center;
+    
+    @media (max-width: 768px) {
+      gap:20px;
+    }
   }
   
   .error-msg {
@@ -29,5 +33,9 @@
     color: rgb(255, 96, 96);
     font-size: 14em;
     font-weight: bold;
+
+    @media (max-width: 768px) {
+      font-size: 8em;
+    }
   }
   

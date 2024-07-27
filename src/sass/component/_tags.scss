@@ -3,6 +3,12 @@
     flex-wrap: wrap;
     gap: 20px;
     list-style-type: none;
+
+    @media (max-width: 768px) {
+        flex-direction: row;
+        flex-wrap: nowrap;
+        gap: 15px;
+      }
 }
 .tag {
     background-color: rgb(255, 96, 96);
@@ -14,6 +20,5 @@
 
     @media (max-width: 768px) {
         border-radius: 10px;
-       
       }
 }

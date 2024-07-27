@@ -36,31 +36,35 @@ const Houses = () => {
         </div>
         <div className="title-section">
           <div className="house-titles">
-          <h1 className="house-title">{selectedHouse.title}</h1>
-          <h3>{selectedHouse.location}</h3>
+            <h1 className="house-title">{selectedHouse.title}</h1>
+            <h3>{selectedHouse.location}</h3>
           </div>
-          <div className="owner">
-          <div className="owner-img-name">
-            <div className="host-name">{selectedHouse.host.name}</div>
-            <div className="host-picture">
-              <img src={selectedHouse.host.picture} alt="Host" />
-            </div>
-            </div>
-            <div className="rating-stars">
-                <Stars rating={selectedHouse.rating} />
-            </div>
-          </div>
+
         </div>
         
-        <Tags tags={selectedHouse.tags} />
+        <div className="owner-stars">  <Tags tags={selectedHouse.tags} />
+             
+         <div className="owner">
+            <div className="owner-img-name">
+              <div className="host-name">{selectedHouse.host.name}</div>
+              <div className="host-picture">
+                <img src={selectedHouse.host.picture} alt="Host" />
+              </div>
+            </div>
+          </div>
+           
+        <div className="rating-stars">
+          <Stars rating={selectedHouse.rating} />
+        </div></div> 
         <div className="collapses-container">
-        <div className="description-collapse">
-          <Collapse
-          data={[{ title: "Description", content: selectedHouse.description }]}/>
-        </div>
-        <div className="equipment-collapse">
-          <Collapse data={[{ title: "Équipements", content: equipements }]} />
-        </div>
+          <div className="description-collapse">
+            <Collapse
+              data={[{ title: "Description", content: selectedHouse.description }]}
+            />
+          </div>
+          <div className="equipment-collapse">
+            <Collapse data={[{ title: "Équipements", content: equipements }]} />
+          </div>
         </div>
       </main>
     </>
