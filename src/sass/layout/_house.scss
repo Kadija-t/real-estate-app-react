@@ -60,11 +60,18 @@
     margin-left: -80px;
     margin-bottom: 23px;
     width: 100%;  
+
+    @media (max-width: 768px) {
+        flex-direction: column;
+        margin: 0px;
+        width: 100%; 
+    }
   }
   
   .description-collapse,
   .equipment-collapse {
     flex: 0 0 58%;
     list-style-type: none;
+
   }
   

@@ -11,4 +11,9 @@
     margin: 10px 0px;
     color: white;
     font-weight: 600;
+
+    @media (max-width: 768px) {
+        border-radius: 10px;
+       
+      }
 }

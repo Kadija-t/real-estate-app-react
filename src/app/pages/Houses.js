@@ -59,7 +59,7 @@ const Houses = () => {
           data={[{ title: "Description", content: selectedHouse.description }]}/>
         </div>
         <div className="equipment-collapse">
-          <Collapse data={[{ title: "Equipements", content: equipements }]} />
+          <Collapse data={[{ title: "Équipements", content: equipements }]} />
         </div>
         </div>
       </main>
