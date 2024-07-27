@@ -35,7 +35,10 @@ const Houses = () => {
           <Slideshow images={selectedHouse.pictures} />
         </div>
         <div className="title-section">
+          <div className="house-titles">
           <h1 className="house-title">{selectedHouse.title}</h1>
+          <h3>{selectedHouse.location}</h3>
+          </div>
           <div className="owner">
           <div className="owner-img-name">
             <div className="host-name">{selectedHouse.host.name}</div>
@@ -44,11 +47,11 @@ const Houses = () => {
             </div>
             </div>
             <div className="rating-stars">
-              <Stars rating={selectedHouse.rating} />
+                <Stars rating={selectedHouse.rating} />
             </div>
           </div>
         </div>
-        <h3>{selectedHouse.location}</h3>
+        
         <Tags tags={selectedHouse.tags} />
         <div className="collapses-container">
         <div className="description-collapse">

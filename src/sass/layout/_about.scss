@@ -10,8 +10,8 @@
 }
 
 .item {
-  padding: 10px 20px;
-  margin-bottom: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .title-section {
@@ -23,21 +23,25 @@
   background-color: rgb(255, 96, 96);
   color: white;
   display: flex;
+  font-size: 10px;
   justify-content: space-between;
   align-items: center;
   cursor: pointer;
   padding: 0 10px;
   position: relative;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .title h2 {
   flex-grow: 1;
+  font-size: 20px;
 }
 
 .title i {
   color: white;
   transition: transform .5s ease-in-out;
-  font-size: 1.5em;
+  font-size: 2em;
 }
 
 .title i.fa-chevron-up {
@@ -46,20 +50,21 @@
 
 .title i.fa-chevron-down {
   transform: rotate(180);
-  font-size: 1.5em;
+  font-size: 2em;
 }
-
 
 .content {
   color: black;
   background-color: white;
   max-height: 0;
   overflow: hidden;
-  transition: max-height 0.5s ease-out;
-  padding: 0 20px;
+  transition: max-height 1s ease-out;
+  margin: 10px 0;
+  padding: 0px 30px;
+  font-size: 15px;
 }
-
 .content.show {
   max-height: 1000px;
-  transition: max-height 0.5s ease-in;
+  padding-bottom: 20px ;
+  transition: max-height 1s ease-in;
 }

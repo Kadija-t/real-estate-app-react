@@ -5,9 +5,9 @@ const Stars = ({ rating }) => {
     const stars = [];
     for (let index = 1; index <= 5; index++) {
       if (index <= rating) {
-        stars.push(<i key={index} className="fa-solid fa-star"></i>);
+        stars.push(<i key={index} className="fa-solid fa-star filled"></i>);
       } else {
-        stars.push(<i key={index} className="fa-regular fa-star"></i>);
+        stars.push(<i key={index} className="fa-solid fa-star empty"></i>);
       }
     }
     return stars;
