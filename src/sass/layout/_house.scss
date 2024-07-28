@@ -32,7 +32,8 @@
 
     @media (max-width: 768px) {
       justify-content: end; 
-      margin: 2px 5px -70px 200px;
+      margin: 2px 0px -70px 200px;
+      padding-right: 10px;
     }
   }
 
@@ -77,7 +78,7 @@
 
     @media (max-width: 768px) {
         flex-direction: column;
-        margin: 0px;
+        margin: 5px;
         width: 100%; 
     }
   }
