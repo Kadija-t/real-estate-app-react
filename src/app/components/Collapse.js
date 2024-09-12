@@ -1,14 +1,13 @@
 import React, { useState } from 'react';
 
-const Collapse = ({ data  }) => {
-  const [selected, setSelected] = useState(null);
+const Collapse = ({ data }) => {
+  const [openSections, setOpenSections] = useState({});
 
   const toggle = (index) => {
-    if (selected === index) {
-      setSelected(null);
-    } else {
-      setSelected(index);
-    }
+    setOpenSections(prevState => ({
+      ...prevState,
+      [index]: !prevState[index]
+    }));
   };
 
   return (
@@ -18,9 +17,9 @@ const Collapse = ({ data  }) => {
           <div className='item' key={index}>
             <div className="title" onClick={() => toggle(index)}>
               <h2>{item.title}</h2>
-              <i className={`fa-solid ${selected === index ? 'fa-chevron-down' : 'fa-chevron-up'}`}></i>
+              <i className={`fa-solid ${openSections[index] ? 'fa-chevron-down' : 'fa-chevron-up'}`}></i>
             </div>
-            <div className={selected === index ? "content show" : "content"}>
+            <div className={openSections[index] ? "content show" : "content"}>
               {item.content}
             </div>
           </div>

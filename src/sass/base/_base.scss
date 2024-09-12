@@ -2,9 +2,16 @@ body {
   font-family: $font-montserrat;
   box-sizing: border-box;
   background: white;
+  margin: 0px;
 }
 
 main {
   padding-right: 150px;
   padding-left: 150px;
+
+  @media (max-width: 768px) {
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+
 }

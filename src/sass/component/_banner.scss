@@ -12,6 +12,11 @@
     overflow: hidden;
     border-radius: 20px;
     background-color: rgba(5, 2, 5, 0.5);
+
+    @media (max-width: 768px) {
+        height: 15vh;
+        object-fit:fill;
+    }
 }
 
 .banner-title {
@@ -19,6 +24,19 @@
     text-align: center;
     position: relative;
     top: -70%;
+
+    @media (max-width: 768px) {   
+        margin-left: 10px;
+        padding-left: 2px;
+        font-size: 25px;
+        color: rgb(231, 220, 220);
+        margin-top: 150px;
+        left: 0px;
+        text-align: left;
+        position: absolute;
+        padding-bottom: 0px;
+       
+    }
     
 }
 

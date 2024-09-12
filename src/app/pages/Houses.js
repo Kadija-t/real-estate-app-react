@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Header from "../components/Header";
 import House from "../data/logements.json";
 import Collapse from "../components/Collapse";
@@ -13,8 +13,13 @@ const Houses = () => {
 
   const selectedHouse = House.find((house) => house.id === id);
 
+  useEffect(() => {
+    if (!selectedHouse) {
+      navigate("/*");
+    }
+  }, [selectedHouse, navigate]);
+
   if (!selectedHouse) {
-    navigate(`/*`);
     return null;
   }
 
@@ -30,23 +35,36 @@ const Houses = () => {
           <Slideshow images={selectedHouse.pictures} />
         </div>
         <div className="title-section">
-          <h1 className="house-title">{selectedHouse.title}</h1>
-          <div className="owner">
-            <div className="host-name">{selectedHouse.host.name}</div>
-            <div className="host-picture">
-              <img src={selectedHouse.host.picture} alt="Host" />
-            </div>
-            <div className="rating-stars">
-              <Stars rating={selectedHouse.rating} />
+          <div className="house-titles">
+            <h1 className="house-title">{selectedHouse.title}</h1>
+            <h3>{selectedHouse.location}</h3>
+          </div>
+
+        </div>
+        
+        <div className="owner-stars">
+          <Tags tags={selectedHouse.tags} />
+         <div className="owner">
+            <div className="owner-img-name">
+              <div className="host-name">{selectedHouse.host.name}</div>
+              <div className="host-picture">
+                <img src={selectedHouse.host.picture} alt="Host" />
+              </div>
             </div>
           </div>
+        <div className="rating-stars">
+          <Stars rating={selectedHouse.rating} />
+        </div></div> 
+        <div className="collapses-container">
+          <div className="description-collapse">
+            <Collapse
+              data={[{ title: "Description", content: selectedHouse.description }]}
+            />
+          </div>
+          <div className="equipment-collapse">
+            <Collapse data={[{ title: "Équipements", content: equipements }]} />
+          </div>
         </div>
-        <h3>{selectedHouse.location}</h3>
-        <Tags tags={selectedHouse.tags} />
-        <Collapse
-          data={[{ title: "Description", content: selectedHouse.description }]}
-        />
-        <Collapse data={[{ title: "Equipements", content: equipements }]} />
       </main>
     </>
   );

@@ -1,8 +1,32 @@
-.fa-star {
-    color:rgb(255, 96, 96);
+.fa-solid.fa-star.filled {
+    color: rgb(255, 96, 96);
     font-size: 20px;
-}
+  }
+  
+  .fa-solid.fa-star.empty {
+    color: rgb(224, 222, 222);
+    font-size: 20px;
+  }
+  
+  .rating-stars {
+    margin-top: 20px;
+  }
 
-.fa-regular.fa-star {
-    opacity: 0.6;
-}
+
+  .stars {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    width: 100%;
+    padding-bottom: 20px;
+
+    @media (max-width: 768px) {
+      justify-content: flex-start;
+      margin-top: 5px;
+    }
+  }
+  
+  .stars i {
+    margin: 0 0 0 10px;
+  }
+  

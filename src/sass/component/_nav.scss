@@ -3,26 +3,45 @@
     align-items: center;
     justify-content: space-between;
     flex-wrap: nowrap;
+
+    @media (max-width: 768px) {
+        flex-direction: row;
+        justify-content: center; 
+    }
     
 }
 
 .navbar__logo{
     width: 17%;
     padding: 10px;
+
+    @media (max-width: 768px) {
+        width: 45%;
+      }
 }
 
 .navbar__links {
    display: flex;
    justify-content: end;
-   gap: 30px
+   gap: 25px;
+
+   @media (max-width: 768px) {
+    flex-direction: row;
+    //font-size: 15px;
+    width: 100%;
+    gap: 20px
+  }
 }
 
 .navbar__link {
     color: black;
     text-decoration: none;
+
+    @media (max-width: 768px) {
+        text-transform: uppercase;
+      }
 }
 
-// applied if selected and active
 .navbar__link--active {
     text-decoration: underline;
     font-weight: 600;
